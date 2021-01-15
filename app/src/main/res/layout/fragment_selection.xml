@@ -32,7 +32,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="2/ Water the flowers."
+            android:text="2. Water the flowers."
             android:background="@drawable/selection"
             android:layout_marginBottom="10dp"/>
         <TextView
@@ -50,7 +50,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="4.Make then as dried flower."
+            android:text="4. Make then as dried flower."
             android:background="@drawable/selection"
             android:layout_marginBottom="10dp"/>
     </LinearLayout>

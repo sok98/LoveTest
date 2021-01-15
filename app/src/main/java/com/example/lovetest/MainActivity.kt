@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,9 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //navController = R.id.nav_host_fragment.findNavController()
+        navController = nav_host_fragment.findNavController()
 
-        navController = findNavController(R.id.nav_host_fragment)
+        //안됐을 때 소연언니가 알려준 방법
+        //navController = findNavController(R.id.nav_host_fragment)
 
     }
 }
