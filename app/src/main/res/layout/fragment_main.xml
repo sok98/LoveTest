@@ -7,11 +7,12 @@
     android:background="@drawable/background"
     tools:context=".fragment.MainFragment">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/main_title"
         android:textColor="@color/white"
@@ -25,17 +26,17 @@
         android:id="@+id/imageView"
         android:layout_width="260dp"
         android:layout_height="400dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/main_img"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="96dp"
         android:src="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
