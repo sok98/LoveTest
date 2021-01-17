@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import com.example.lovetest.R
 import kotlinx.android.synthetic.main.fragment_question.*
 
-class QuestionFragment : Fragment() {
+class QuestionFragment : Fragment(), View.OnClickListener {
 
     lateinit var navController: NavController
 
@@ -27,8 +27,17 @@ class QuestionFragment : Fragment() {
 
         navController = Navigation.findNavController(view)
 
-        btn_next.setOnClickListener{
-            navController.navigate(R.id.action_questionFragment_to_selectionFragment)
+        btn_next.setOnClickListener(this)
+
+    }
+
+    override fun onClick(v: View?) {
+        when(v?.id){
+            R.id.btn_next -> {
+                navController.navigate(R.id.action_questionFragment_to_selectionFragment)
+            }
+
+
         }
     }
 }
